@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html ng-app="task2">
+
+<head>
+    <title>Task 2</title>
+    <link rel="stylesheet" href="/usr/local/testGit/test/bower_components/angular-material/angular-material.min.css">
+    <link href="task2.css" rel="stylesheet">
+</head>
+
+<body ng-controller="formmm">
+    <!-- toolbar start -->
+    <!-- after show -->
+    <md-toolbar ng-show="!showSearch">
+        <div class="md-toolbar-tools">
+            <h3>
+      Minions
+    </h3>
+            <span flex></span>
+            <md-button aria-label="Search" ng-click="showSearch = !showSearch">
+                <img src="ic_search_black_24px.svg" alt="Search">
+            </md-button>
+        </div>
+    </md-toolbar>
+    <!-- before show -->
+    <md-toolbar class="md-hue-1" ng-show="showSearch">
+        <div class="md-toolbar-tools">
+            <md-button ng-click="showSearch = !showSearch" aria-label="Back" value="Search">
+                <img src="ic_search_black_24px.svg" alt="Search">
+            </md-button>
+            <md-input-container md-theme="input" flex>
+                <!-- <label>&nbsp;</label> -->
+                <input ng-model="search.who" placeholder="enter search">
+            </md-input-container>
+        </div>
+    </md-toolbar>
+    <!-- toolbar concludes -->
+    <md-content>
+        <md-tabs md-dynamic-height md-border-bottom>
+            <md-tab label="List view">
+                <md-content class="md-padding">
+                    <md-list>
+                        <md-list-item><img ng-src="/home/shetty/Documents/raven/images/M1.jpg" width="250" height="250"></md-list-item>
+                        <md-divider ng-if="!$last"></md-divider>
+                        <md-list-item><img ng-src="/home/shetty/Documents/raven/images/M2.jpg" width="250" height="250"></md-list-item>
+                        <md-divider ng-if="!$last"></md-divider>
+                        <md-list-item><img ng-src="/home/shetty/Documents/raven/images/M3.jpg" width="250" height="250"></md-list-item>
+                        <md-divider ng-if="!$last"></md-divider>
+                        <md-list-item><img ng-src="/home/shetty/Documents/raven/images/M4.jpg" width="250" height="250"></md-list-item>
+                        <md-divider ng-if="!$last"></md-divider>
+                        <md-list-item><img ng-src="/home/shetty/Documents/raven/images/M5.jpg" width="250" height="250"></md-list-item>
+                        <md-divider ng-if="!$last"></md-divider>
+                        <md-list-item><img ng-src="/home/shetty/Documents/raven/images/M6.jpg" width="250" height="250"></md-list-item>
+                        <md-divider ng-if="!$last"></md-divider>
+                        <md-list-item><img ng-src="/home/shetty/Documents/raven/images/M7.jpg" width="250" height="250"></md-list-item>
+                        <md-divider ng-if="!$last"></md-divider>
+                        <md-list-item><img ng-src="/home/shetty/Documents/raven/images/M8.jpg" width="250" height="250"></md-list-item>
+                        <md-divider ng-if="!$last"></md-divider>
+                        <md-list-item><img ng-src="/home/shetty/Documents/raven/images/M9.jpg" width="250" height="250"></md-list-item>
+                        <md-divider ng-if="!$last"></md-divider>
+                        <md-list-item><img ng-src="/home/shetty/Documents/raven/images/M10.png" width="250" height="250"></md-list-item>
+                        <md-divider ng-if="!$last"></md-divider>
+                        <md-list-item><img ng-src="/home/shetty/Documents/raven/images/M11.jpg" width="250" height="250"></md-list-item>
+                        <md-divider ng-if="!$last"></md-divider>
+                        <md-list-item><img ng-src="/home/shetty/Documents/raven/images/M12.jpg" width="250" height="250"></md-list-item>
+                        <md-divider ng-if="!$last"></md-divider>
+                        <md-list-item><img ng-src="/home/shetty/Documents/raven/images/M13.jpg" width="250" height="250"></md-list-item>
+                        <md-divider ng-if="!$last"></md-divider>
+                        <md-list-item><img ng-src="/home/shetty/Documents/raven/images/M14.jpg" width="250" height="250"></md-list-item>
+                        <md-divider ng-if="!$last"></md-divider>
+                        <md-list-item><img ng-src="/home/shetty/Documents/raven/images/M15.jpg" width="250" height="250"></md-list-item>
+                        <md-divider ng-if="!$last"></md-divider>
+                    </md-list>
+                </md-content>
+            </md-tab>
+            <md-tab label="Grid view">
+                <!--        Grid-list-start -->
+                <md-content class="md-padding">
+                    <md-grid-list md-cols="3" md-row-height="200px" md-gutter="8px">
+                        <md-grid-tile><img src="/home/shetty/Documents/raven/images/M1.jpg" width="200px"></md-grid-tile>
+                        <md-grid-tile><img src="/home/shetty/Documents/raven/images/M2.jpg" width="200px"></md-grid-tile>
+                        <md-grid-tile><img src="/home/shetty/Documents/raven/images/M3.jpg" width="200px"></md-grid-tile>
+                        <md-grid-tile><img src="/home/shetty/Documents/raven/images/M4.jpg" width="200px"></md-grid-tile>
+                        <md-grid-tile><img src="/home/shetty/Documents/raven/images/M5.jpg" width="200px"></md-grid-tile>
+                        <md-grid-tile><img src="/home/shetty/Documents/raven/images/M6.jpg" width="200px"></md-grid-tile>
+                        <md-grid-tile><img src="/home/shetty/Documents/raven/images/M7.jpg" width="200px"></md-grid-tile>
+                        <md-grid-tile><img src="/home/shetty/Documents/raven/images/M8.jpg" width="200px"></md-grid-tile>
+                        <md-grid-tile><img src="/home/shetty/Documents/raven/images/M9.jpg" width="200px"></md-grid-tile>
+                        <md-grid-tile><img src="/home/shetty/Documents/raven/images/M10.png" width="200px"></md-grid-tile>
+                        <md-grid-tile><img src="/home/shetty/Documents/raven/images/M11.jpg" width="200px"></md-grid-tile>
+                        <md-grid-tile><img src="/home/shetty/Documents/raven/images/M12.jpg" width="200px"></md-grid-tile>
+                        <md-grid-tile><img src="/home/shetty/Documents/raven/images/M13.jpg" width="200px"></md-grid-tile>
+                        <md-grid-tile><img src="/home/shetty/Documents/raven/images/M14.jpg" width="200px"></md-grid-tile>
+                        <md-grid-tile><img src="/home/shetty/Documents/raven/images/M15.jpg" width="200px"></md-grid-tile>
+                    </md-grid-list>
+                </md-content>
+            </md-tab>
+        </md-tabs>
+    </md-content>
+    <script type="text/javascript" src="/usr/local/testGit/test/bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="/usr/local/testGit/test/bower_components/angular-animate/angular-animate.js"></script>
+    <script type="text/javascript" src="/usr/local/testGit/test/bower_components/angular-aria/angular-aria.js"></script>
+    <script type="text/javascript" src="/usr/local/testGit/test/bower_components/angular-messages/angular-messages.js"></script>
+    <script type="text/javascript" src="/usr/local/testGit/test/bower_components/angular-material/angular-material.min.js"></script>
+    <script type="text/javascript" src="task2.js"></script>
+</body>
+
+</html>
